@@ -1,10 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
   <title>CIS445 Project</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
 </head>
 <body>
-       <div>
+       <div class="header">
            <h1><a href="/">CIS445 Blog</a></h1>
        </div>
        {% for post in posts %}
