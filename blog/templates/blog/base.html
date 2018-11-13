@@ -14,10 +14,9 @@
     <a class="navbar-brand" href="#">CIS445 Project</a>
   </div>
   <ul class="nav navbar-nav">
-    <li class="active"><a href="#">About</a></li>
-    <li><a href="Information">Information</a></li>
-    <li><a href="#">Pricing</a></li>
-    <li><a href="#">Contact</a></li>
+{% if user.is_authenticated %}
+    <li><a href="{% url 'post_new' %}" class="top-menu">Add New Post</a></li>
+{% endif %}
   </ul>
 </div>
 </nav>
